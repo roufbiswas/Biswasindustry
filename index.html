@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <!-- তোমার JS ফাইল -->
+  <script src="B01.js"></script>
+
+  <style>
+    /* সব প্রোডাক্টের ছবি 3:4 করবে - তোমার 1536x2048 এর জন্য */
+    .product img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+
+    /* দামের কালার */
+    .product p {
+      color: yellow;
+    }
+
+    /* প্রোডাক্টগুলো পাশাপাশি বসানোর জন্য */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* প্রতিটা প্রোডাক্ট বক্সের ডিজাইন */
+    .product {
+      width: 260px;
+      margin: 10px;
+      padding: 10px;
+      border: 10px solid black;
+      background-color: gray;
+    }
+  </style>
+
+  <!-- উপরের Mode বাটন -->
+  <button style="float: left; font-size: 50px;">Mode</button>
+
+  <!-- Menu বাটন - A02.html এ যাবে -->
+  <a href="A02.html">
+    <button style="float: right; font-size: 50px;">Menu</button>
+  </a>
+
+  <br><br><br>
+
+  <!-- দোকানের নাম -->
+  <h1 style="font-size: 150px; text-align: center; margin: 0px; color: red;">BISWAS</h1>
+  <h1 style="font-size: 150px; text-align: center; margin: 0px; color: green;">INDUSTRY</h1>
+
+  <!-- সব প্রোডাক্ট এখানে -->
+  <div class="products">
+
+    <!-- প্রোডাক্ট 1 - herf ভুল ছিল, href করে দিলাম -->
+
+      <div class="product">
+            <a href="iphone11.html"><img src="IMG01.jpg"></a>
+        <h2>IPhone 11</h2>
+        <p>20,000</p>
+      </div>
+    
+
+    <!-- প্রোডাক্ট 2 -->
+      <div class="product">
+        <a onclick="return login()" href="iphonexs.html">
+        <img src="IMG02.jpg"></a>
+        <h2>iphone xs</h2>
+        <p>15, 000</p>
+      </div>
+
+
+    <!-- প্রোডাক্ট 3 - আগে একটা </a> বেশি ছিল, ঠিক করে দিলাম -->
+    <div class="product">
+      <a href="artpic.html"><img src="IMG03.jpg"></a>
+      <h2>Art pic</h2>
+      <p>10</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
